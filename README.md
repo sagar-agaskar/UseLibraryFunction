@@ -2,7 +2,7 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+Perform basic operations using application , field , command sets customizers
 
 [picture of the solution in action, if possible]
 
