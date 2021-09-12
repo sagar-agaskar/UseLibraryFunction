@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{1522e38d-134d-48c1-b13a-b3fa0c6f8138}"
+            Name="PercentageCompleted"
+            DisplayName="PercentageCompleted"
+            Type="Text"            
+            Required="FALSE"
+            Group="SPFx Columns"
+            ClientSideComponentId="96af62fc-fc82-4e19-a857-04d62745b7fb">
+    </Field>
+    <Field ID="{1522e38d-134d-48c1-b13a-b3fa0c6f8139}"
+            Name="Age"
+            DisplayName="Age"
+            Type="Text"            
+            Required="FALSE"
+            Group="SPFx Columns"
+            ClientSideComponentId="6f67a574-dcb5-4722-abda-1ef779e33eca">
+    </Field>
+    <CustomAction
+        Title="SPFxListViewCommandSet"
+        RegistrationId="100"
+        RegistrationType="List"
+        Location="ClientSideExtension.ListViewCommandSet.CommandBar"
+        ClientSideComponentId="d855c973-aef7-42d8-ac23-dc77ac2e7d73"
+        ClientSideComponentProperties="{&quot;sampleTextOne&quot;:&quot;One item is selected in the list.&quot;, &quot;sampleTextTwo&quot;:&quot;This command is always visible.&quot;}">
+    </CustomAction>
+    <CustomAction
+    Title="SPFxApplicationCustomizer"
+    Location="ClientSideExtension.ApplicationCustomizer"
+    ClientSideComponentId="de5aa7ad-84cb-476c-8310-cf02d892c171"
+    ClientSideComponentProperties="{&quot;Top&quot;:&quot;Top area of the page&quot;,&quot;Bottom&quot;:&quot;Bottom area in the page&quot;}">
+  </CustomAction>
+</Elements>

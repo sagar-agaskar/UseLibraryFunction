@@ -1,0 +1,69 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "initialPage": "https://localhost:5432/workbench",
+  "api": {
+    "port": 5432,
+    "entryPath": "node_modules/@microsoft/sp-webpart-workbench/lib/api/"
+  },
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://agaskar1989.sharepoint.com/sites/TestModern/Lists/Project%20Status/AllItems.aspx",
+      "fieldCustomizers": {
+        "PercentageCompleted": {
+          "id": "96af62fc-fc82-4e19-a857-04d62745b7fb",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "colorColumns": {
+      "pageUrl": "https://agaskar1989.sharepoint.com/sites/TestModern/Lists/Project%20Status/AllItems.aspx",
+      "fieldCustomizers": {
+        "PercentageCompleted": {
+          "id": "96af62fc-fc82-4e19-a857-04d62745b7fb",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "ageColor": {
+      "pageUrl": "https://agaskar1989.sharepoint.com/sites/TestModern/Lists/Project%20Status/AllItems.aspx",
+      "fieldCustomizers": {
+        "Age": {
+          "id": "6f67a574-dcb5-4722-abda-1ef779e33eca",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "listCommand": {
+      "pageUrl": "https://agaskar1989.sharepoint.com/sites/TestModern/Lists/Project%20Status/AllItems.aspx",
+      "customActions": {
+        "d855c973-aef7-42d8-ac23-dc77ac2e7d73": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "headerFooter": {
+      "pageUrl": "https://agaskar1989.sharepoint.com/sites/TestModern/Lists/Project%20Status/AllItems.aspx",
+      "customActions": {
+        "de5aa7ad-84cb-476c-8310-cf02d892c171": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "THis is top of the page",
+            "Bottom" : "THis is bottom of the page"
+          }
+        }
+      }
+    }
+  }
+}

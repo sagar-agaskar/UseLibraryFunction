@@ -1,0 +1,54 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "hello-world-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/helloWorld/HelloWorldWebPart.js",
+          "manifest": "./src/webparts/helloWorld/HelloWorldWebPart.manifest.json"
+        }
+      ]
+    },
+    "color-columns-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/colorColumns/ColorColumnsFieldCustomizer.js",
+          "manifest": "./src/extensions/colorColumns/ColorColumnsFieldCustomizer.manifest.json"
+        }
+      ]
+    },
+    "age-color-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/ageColor/AgeColorFieldCustomizer.js",
+          "manifest": "./src/extensions/ageColor/AgeColorFieldCustomizer.manifest.json"
+        }
+      ]
+    },
+    "list-command-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/listCommand/ListCommandCommandSet.js",
+          "manifest": "./src/extensions/listCommand/ListCommandCommandSet.manifest.json"
+        }
+      ]
+    },
+    "header-footer-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/headerFooter/HeaderFooterApplicationCustomizer.js",
+          "manifest": "./src/extensions/headerFooter/HeaderFooterApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js",
+    "ColorColumnsFieldCustomizerStrings": "lib/extensions/colorColumns/loc/{locale}.js",
+    "AgeColorFieldCustomizerStrings": "lib/extensions/ageColor/loc/{locale}.js",
+    "ListCommandCommandSetStrings": "lib/extensions/listCommand/loc/{locale}.js",
+    "HeaderFooterApplicationCustomizerStrings": "lib/extensions/headerFooter/loc/{locale}.js"
+  }
+}

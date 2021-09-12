@@ -1,0 +1,25 @@
+.FieldCustomizerDemo {
+  .cell {
+    background-color: "[theme:themePrimary, default:#e5e5e5]";
+    display: 'inline-block';
+  }
+}
+.green {
+  background-color:green;
+  width: 100px;
+  height: 25px;
+  color: white;
+}
+
+.red {
+  background-color:red;
+  width: 100px;
+  height: 25px;
+  color: white;
+}
+
+.yellow {
+  background-color:yellow;
+  width: 100px;
+  height: 25px;
+}
